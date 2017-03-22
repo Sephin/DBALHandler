@@ -39,7 +39,7 @@ class DBALHandler extends AbstractProcessingHandler
     /**
      * Constructor
      * @param Connection $connection
-     * @param array $settings
+     * @param array $settings Settings containing 'table_name' and 'save_context'
      * @param int $level Logging level
      * @param boolean $bubble Propagate the message or not
      */
@@ -61,7 +61,7 @@ class DBALHandler extends AbstractProcessingHandler
     }
 
     /**
-     * Returns the table schema.
+     * Creates the table needed to store the logs.
      * @return \Doctrine\DBAL\Schema\Table
      */
     public function configureTable()

@@ -1,0 +1,13 @@
+{
+    "name": "sephin/monolog-dbal-handler",
+    "autoload": {
+        "psr-4": {
+            "": "src/" 
+        }
+    },
+    "require": {
+        "php": ">=5.6.30",
+        "monolog/monolog": "^1.22",
+        "doctrine/dbal": "^2.5"
+    }
+}
